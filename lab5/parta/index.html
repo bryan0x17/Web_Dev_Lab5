@@ -12,21 +12,27 @@
     <h1>Unit Converter</h1>
     <div class="subtitle">Easily convert different measurements between imperial and metric units</div>
     <div class="form">
-        <label for="measurements">Select a measurement:</label>
-        <select name="measurements" id="measurements" onchange="displayUnits(this.value);">
-            <option value="length">Length</option>
-            <option value="volume">Volume</option>
-            <option value="area">Area</option>
-            <option value="distance">Distance</option>
-        </select>
+        <div class="selector">
+            <label for="measurements">Select a measurement:</label>
+            <select name="measurements" id="measurements" onchange="displayUnits(this.value); convertImperial(); convertMetric();">
+                <option value="none">Please select</option>
+                <option value="length">Length</option>
+                <option value="volume">Volume</option>
+                <option value="area">Area</option>
+                <option value="distance">Distance</option>
+            </select>
+        </div>
         <table>
             <th>Imperial</th>
             <th></th>
+            <th></th>
             <th>Metric</th>
             <tr>
-                <td><input type="number" min="0" id="imperial" onchange="convertImperial(this.value);"><div id="imperial_unit"></div></td>
+                <td><input type="number" min="0" value="0" id="imperial" onchange="convertImperial();"></td>
+                <td><div id="imperial_unit"></div></td>
                 <td>equals</td>
-                <td><input type="number" min="0" id="metric" onchange="convertMetric(this.value);"><div id="metric_unit"></div></td>
+                <td><input type="number" min="0" value="0" id="metric" onchange="convertMetric();"></td>
+                <td><div id="metric_unit"></div></td>
             </tr>
         </table>
     </div>

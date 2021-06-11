@@ -17,12 +17,12 @@ h1 {
 }
 
 .form {
-    margin: auto;
-    margin-left: 30%;
-    width: 40%;
+    margin: 0 auto;
+    width: fit-content;
     background-color: rgb(202, 201, 201);
 }
 
-select {
-    margin: 20px;
+.selector {
+    text-align: center;
+    margin-bottom: 20px;
 }
