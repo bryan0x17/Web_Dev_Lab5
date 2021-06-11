@@ -1,4 +1,4 @@
-/*External stylesheet for Lab 2 - Part B */
+/*External stylesheet for Lab 5 - Part B */
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 body {
@@ -25,4 +25,8 @@ img {
 .left {
     margin-right: 20%;
     text-align: right;
+}
+
+figcaption {
+    text-align: center;
 }
