@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5 - Part A</title>
+</head>
+<body>
+    <div>
+        <h1>Unit Converter</h1>
+        <div class="subtitle">Easily convert different measurements between imperial and metric units</div>
+        <label for="measurements">Select a measurement:</label>
+        <select name="measurements" id="measurements" onchange="displayUnits(this.value);">
+            <option value="length">Length</option>
+            <option value="volume">Volume</option>
+            <option value="area">Area</option>
+            <option value="distance">Distance</option>
+        </select>
+        <table>
+            <th>Imperial</th>
+            <th></th>
+            <th>Metric</th>
+            <tr>
+                <td><input type="number" min="0" id="imperial" onchange="convertImperial(this.value);"><div id="imperial_unit"></div></td>
+                <td>equals</td>
+                <td><input type="number" min="0" id="metric" onchange="convertMetric(this.value);"><div id="metric_unit"></div></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
