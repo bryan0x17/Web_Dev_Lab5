@@ -1,0 +1,28 @@
+/*External stylesheet for Lab 2 - Part B */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+body {
+    background-color: rgb(165, 226, 241);
+    color: black;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    text-align: left;
+}
+h1 {
+    font-size: 75px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+.right {
+    margin-left: 20%;
+    text-align: left;
+}
+
+.left {
+    margin-right: 20%;
+    text-align: right;
+}
